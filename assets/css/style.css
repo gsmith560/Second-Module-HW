@@ -1,0 +1,221 @@
+/* full project styling guide */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* end of styling guide */
+
+
+/* start of body styling */
+body {
+  background-color: rgb(8, 167, 185);
+  }
+  
+header {
+  padding: 20px 40px;
+  background-color: #babc3bfe;
+  display: flex;
+  position: sticky;
+  top: 0;
+  background-size: cover;
+  background-position: right;  
+  background-attachment: fixed;
+  background-position: 80%;
+
+}
+
+header nav ul li a:hover {
+  background: #fce138;
+  color: #d8e2e7;
+  border-radius: 20px;
+  text-shadow: none;
+}
+
+
+  
+/* beginnins of copy/past of bootcamp run buddy repo */
+    /* styling for Graham Smith title */
+    header h1 {
+      font-weight: bold;
+      margin: 0;
+      font-size: 50px;
+      color: var(--primary-color);
+      text-shadow: 0px 0 15px rgba(0, 0, 0, 0.5);
+    }
+    
+    header a {
+      text-decoration: none;
+      color: var(--primary-color);
+    }
+    
+    header nav {
+      margin: 20px 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    
+    header nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+    }
+    
+    header nav ul li a {
+      padding: 10px 15px;
+      font-weight: 200;
+      font-size: 20px;
+      text-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    
+    header nav ul li a:hover {
+      background: var(--primary-color);
+      color: var(--secondary-color);
+      border-radius: 20px;
+      text-shadow: none;
+    }
+/* end of header and nav styling */
+
+/* start of hero styling */
+.hero img {
+  height: 500ox;
+  width: 500px;
+}
+
+.hero {
+      background-image: url("../images/DC.jpeg");
+      height: 800px;
+      background-size: cover;
+      background-position: top;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+    }
+/* end of hero styling */ 
+
+/* start of bio styling */
+.bio-title {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30px;
+  padding: 30px;
+
+}
+/* end of bio seyling */  
+
+/* start of My Projects styling */
+.My-Projects {
+  padding: 30px 30px;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 30px;
+  background-color: #368443;
+
+}
+
+.projects-grid-wrapper {
+  width: 80%;
+  height: 200px;
+  display: wrap;
+  justify-content: space-around;
+  width: 80%;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.projects-grid {
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 40px;
+}
+
+/* following code is attributed from another repo that is not mine */
+.project {
+  border: solid;
+  color: hwb(0 2% 98%);
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+}
+/* end of copied code */
+
+.first-project {
+  background-image: url(../images/bluequestion.png);
+  background-size: cover;
+  border: white;
+  position: relative;
+  width: 300px;
+  height: 400px;
+
+}
+
+.first-project:hover {
+  opacity: 100%;
+}
+
+.second-project {
+  background-image: url(../images/purplequestion.jpg);
+  background-size: cover;
+  border: white;
+  position: relative;
+  width: 300px;
+  height: 400px;
+}
+
+.second-project:hover {
+  opacity: 100%;
+}
+
+.third-project {
+  background-image: url(../images/redquestion.png);
+  background-size: cover;
+  border: white;
+  position: relative;
+  width: 300px;
+  height: 400px;
+}
+
+.third-project:hover {
+  opacity: 100%;
+}
+
+.fourth-project {
+  background-image: url(../images/yellowquestion.png);
+  background-size: cover;
+  border: white;
+  position: relative;
+  width: 300px;
+  height: 400px;
+}
+
+.fourth-project:hover {
+  opacity: 100%;
+}
+
+/* End of My Projects styling */
+
+/* footer styling */
+.footer {
+  background-color: #fce138;
+  padding: 15px;
+  text-align: center;
+}
+/* end of footer styling */
+
+/* start of responsive sizing */
+@media (max-width: 600px) {
+  .row {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+/* end of sizing */
